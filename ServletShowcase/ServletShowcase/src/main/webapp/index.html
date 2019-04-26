@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Expense Reimbursement System</title>
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+</head>
+<body background = "image1.jpeg">
+	
+	<div class="container-fluid" style="margin-top: 50px">
+		<div class="row" style="height: 100px">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<h2 style="text-align: center">Welcome to the Expense Reimbursement System</h2>
+				<hr>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row" style="height: 200px">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<h2 style="text-align: center">Employee Login</h2>
+				<!-- A form can be given an "action" and an HTTP "method". The action
+				determines which servlet the request is sent to while the method determines
+				what type of HTTP request the client is making. -->
+				<form method="post" action="./ErsLogin.do">
+					<input class="form-control" type="text" name="username" id="user" placeholder="Please enter your username"> <input
+						class="form-control" type="password" name="password1" placeholder="Please enter your password"> 
+					<!-- 	<input class="form-control" type="password" name="password2" placeholder="Enter your password again, swine"> -->
+						<center><button class="btn-danger">Login</button></center></center>
+				</form>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+  	<div class="container-fluid">
+		<div class="row" style="height: 200px">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<h2 style="text-align: center">Manager Login</h2>
+				<form method = "post" action = "./ErsManLogin.do" >
+					<input class="form-control" type="text" name="username" placeholder="Enter your username"> <input
+						class="form-control" type="password" name="password1" placeholder="Enter your password">
+						<center><button class="btn-danger">Boss Login</button></center>
+				</form>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+
+</body>
+</html>

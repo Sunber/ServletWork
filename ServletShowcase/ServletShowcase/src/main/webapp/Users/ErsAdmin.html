@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function preventBack() {
+		window.history.forward();
+	}
+	setTimeout("preventBack()", 0);
+	window.onunload = function() {
+		null
+	};
+</script>
+<meta charset="ISO-8859-1">
+<title>This is the Manager Page</title>
+</head>
+<body background="image1.jpeg">
+	<h1>Welcome to the Manager Page</h1>
+	<!-- <form method="post" action="/ServletShowcase/tableDisplay.do">
+	<button type="button"><a href= "http://localhost:8088/ServletShowcase/">Logout</a></button>
+	<center><button class="btn-danger">View All Requests</button></center>
+</form> -->
+	<button type="button">
+		<a href="http://localhost:8088/ServletShowcase/">Logout</a>
+	</button>
+
+	<table>
+		<thead>
+		<th>Request ID</th>
+
+		<th>Employee ID</th>
+
+		<th>Request</th>
+		</thead>
+		<tbody id = "reqBody">
+			
+		</tbody>
+	</table>
+	<script src = "ServletShowcase/src/main/webapp/Scripts/ErsAdminDisp.js"></script>
+</body>
+</html>

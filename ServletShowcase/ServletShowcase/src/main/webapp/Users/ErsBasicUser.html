@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+<meta charset="ISO-8859-1">
+<title>Employee Page</title>
+</head>
+<body background = "image1.jpeg">
+<h1>Welcome to the Employee Page!</h1>
+
+<button type="button"><a href= "http://localhost:8088/ServletShowcase/">Logout</a></button>
+<button type="button"><a href= "http://localhost:8088/ServletShowcase/Users/Request.html">Make a Request</a></button>
+
+
+<!-- <form method = "post" action = "/ServletShowcase/UserUpdateServlet">
+<div class = "container-fluid" stlye = "align:center">
+	<input type = "text" style = "text-align: center" name = "empId" placeholder = "Employee">
+	<input type = "text" style = "text-align: center" name = "firstName" placeholder = "EmpName">
+	<input type = "text" style = "text-align: center" name = "lastName" placeholder = "EmpLastName">
+	<input type = "text" style = "text-align: center" name = "userName" placeholder = "EmployeeUserName">
+	<button>Submit</button>
+	
+</div>
+
+</form>  -->
+
+</body>
+</html>

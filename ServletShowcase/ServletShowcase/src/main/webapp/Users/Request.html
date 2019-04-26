@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+<meta charset="ISO-8859-1">
+<title>This is the requests page</title>
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+</head>
+<body background = "image1.jpeg">
+<h1>Welcome to the Requests Page</h1>
+
+<p>Please fill out the following information below if you want to complain.</p>
+
+	<form method="post" action="/ServletShowcase/ErsRequesth.do">
+				<input class="form-control" type="text" name="userId" placeholder="Please enter new request id">
+				 <input class="form-control" type="text" name="re" placeholder="Please enter your assigned worker id">
+				 <input class="form-control" type="text" name="req"  placeholder="Please enter your reimbursement request">
+				
+				 
+							<center><button class="btn-danger">Submit</button></center>
+							<button type="button"><center><a href= "http://localhost:8088/ServletShowcase/">Logout</a></center></button>
+							
+					</form>
+
+
+
+</body>
+</html>
